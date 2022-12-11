@@ -1,37 +1,63 @@
 <!DOCTYPE html>
-<html lang="en"
+<html lang="en">
 <head>
-    <meta charset="UTF-8"
-    <title>tao form don gian</title>
+    <meta charset="UTF-8">
+    <title>Form </title>
+    <style>
+        h1{
+            border: 1px  ;
+            background-color: yellowgreen ;
+            width: 50%;
+            text-align:center;
+            color: white;
+        }
+        table,tr{
+            color:blue;
+        }
+        .label-red{
+            color: red;
+        }
+    </style>
 </head>
 <body>
-<table border="0" WIDTH="600" height="20px"
-    <tr style="=background-color: yellow"
-        <th>SO THICH CUA BAN</th>
-    </tr>
-</table>
-<form action="method">
-    <label for="yourname">Ho va Ten</label>
-    <input type="text" name="yourname" id="yourname"><br>
-    <label for="email">Email</label>
-    <input type="=text" name="email" id="email"><br>
-    <lable for="">So thich</lable>
-    <input type="checkbox" name="hobby" value="the thao" id="hobby" required>
-    <lable for="hobby">the thao</lable>
-    <input type="checkbox" name="hobby" value="am nhac" id="hobby" required>
-    <lable for="hobby">am nhac</lable>
-    <input type="checkbox" name="hobby" value="doc sach" id="hobby" required>
-    <lable for="hobby">doc sach</lable>
-    <br>
-    <input type="checkbox" name="hobby" value="luot web" id="hobby" required>
-    <lable for="hobby">luot web</lable>
-    <input type="checkbox" name="hobby" value="choi game" id="hobby" required>
-    <lable for="hobby">choi game</lable>
-    <input type="checkbox" name="hobby" value="dien anh" id="hobby" required>
-    <lable for="hobby">dien anh</lable>
-    <br>
-    <input type="submit" value="gui thong tin">
-    <input type="reset"value="nhap lai">
+<h1> SỞ THÍCH CỦA BẠN </h1>
+<form action="https://www.youtube.com/">
+    <table>
+        <tr>
+            <td> <label class="label-red" for="duc "> Họ Và Tên </label> </td>
+            <td> <input type="text" id="duc " name=" ho va ten " >  </td>
+        </tr>
+        <tr>
+            <td> <label class="label-red" for="anh"> Email </label> </td>
+            <td> <input type="text" id="anh" name=" email" > </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td class="label-red" >Sở Thích</td>
+            <td><input type="checkbox" name="the thao "  > Thể Thao</td>
+            <td  >         <input type="checkbox" name="am nhac"  > Âm nhạc </td>
+            <td>         <input type="checkbox" name="doc sach" > Đọc sách  </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>         <input type="checkbox" name="luot web" > Lướt Web </td>
+            <td>         <input type="checkbox" name="choi game" > Chơi Game </td>
+            <td>         <input type="checkbox" name="dien anh"  > Điện ảnh  </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td> <input type="checkbox" name="du lich" > Du lịch </td> <br>
+        </tr>
+        <table>
+            <tr>
+                <td ><input type="submit" name="submit" value=" Gửi Thông tin"></td>
+                <td><input type="submit" name="submit" value=" Nhập lại"></td>
+            </tr>
+        </table>
+
+    </table>
 </form>
+
 </body>
 </html>
