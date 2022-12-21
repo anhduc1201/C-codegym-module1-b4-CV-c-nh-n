@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tinh chi so can nang</title>
+</head>
+<body>
+<form>
+    <input type="text" name="w" id="weight">
+    <input type="text" name="h" id="height">
+
+    <br>
+    <input type="button" name="tinh" value="ket qua" onclick="tinhkq()">
+</form>
+<p id="result" style="color: aqua"></p>
+
+<script>
+    function tinhkq() {
+       let weight= document.getElementById("weight").value;
+       let height= document.getElementById("height").value;
+       let bmi= weight/(height^2);
+       let result;
+          if (bmi<18){
+              result="Underweight";}
+          else if (18<=bmi<25){
+              result="normal";}
+          else if (25<=bmi<30){
+              result="Overweight";}
+          else {result="obese";
+          }
+          document.getElementById("result").innerText="result:"+result
+
+    }
+</script>
+</body>
+</html>
