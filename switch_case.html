@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu lệnh switch_ase</title>
+</head>
+<body>
+<div class="form">
+    <form >
+        <input type="text" id="month" >
+        <input type="button" value="nhập tháng ở đây" onclick="tinhngay()">
+    </form>
+    <p id="result" style="color: red"></p>
+</div>
+<script>
+    function tinhngay() {
+        let month=+(document.getElementById("month").value) ;
+        let result;
+        switch (month) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                result=" 31 ngày ";
+                break ;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                result=" 30 ngày";
+                break;
+            case 2:
+                result=" 28 hoặc 29 ngày";
+                break;
+            default :
+                result="không có tháng này,mời nhập lại";
+        }
+        document.getElementById("result").innerText="Result:"+result ;
+    }
+</script>
+</body>
+</html>
